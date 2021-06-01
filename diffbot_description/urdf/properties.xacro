@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot name="diffbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:property name="PI" value="3.14159265359"/>
+    <xacro:property name="WHEEL_RADIUS" value="0.1"/>
+
+    <!--Joint Properties-->
+    <xacro:property name="U_MAX" value="10"/>
+    <xacro:property name="V_MAX" value="20"/>
+    <xacro:property name="WHEEL_JOINT_DAMP" value="0.3"/>
+    <xacro:property name="WHEEL_SEPARATION" value="0.42"/>
+
+    <!--Inertial Properties-->
+    <xacro:property name="CHASSIS_COM" value="-0.1 0 -0.05"/>
+    <xacro:property name="CHASSIS_M" value="3"/>
+    <xacro:property name="CHASSIS_ixx" value="0.009607873"/>
+    <xacro:property name="CHASSIS_ixy" value="0.00018491"/>
+    <xacro:property name="CHASSIS_ixz" value="0.000352663"/>
+    <xacro:property name="CHASSIS_iyy" value="0.010242986"/>
+    <xacro:property name="CHASSIS_iyz" value="0.00027809"/>
+    <xacro:property name="CHASSIS_izz" value="0.009654254"/>
+
+    <xacro:property name="WHEEL_COM" value="0 0 0"/>
+    <xacro:property name="WHEEL_M" value="0.21"/>
+    <xacro:property name="WHEEL_ixx" value="0.00012052"/>
+    <xacro:property name="WHEEL_ixy" value="0.0"/>
+    <xacro:property name="WHEEL_ixz" value="0.0"/>
+    <xacro:property name="WHEEL_iyy" value="0.0029397"/>
+    <xacro:property name="WHEEL_iyz" value="0.0"/>
+    <xacro:property name="WHEEL_izz" value="0.00012052"/>
+
+    <!--Camera Properties-->
+    <xacro:property name="camera_link" value="0.05" /> <!-- Size of square 'camera' box -->
+    
+</robot>
